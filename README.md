@@ -7,6 +7,8 @@ that can be downloaded as a tar file from a pre-determined location.
 The snap does not install with any images at first, but they will be
 fetched as needed.
 
+[![Snap Status](https://build.snapcraft.io/badge/ParadropLabs/paradrop-imserve.svg)](https://build.snapcraft.io/user/ParadropLabs/paradrop-imserve)
+
 Image Server
 ------------
 
