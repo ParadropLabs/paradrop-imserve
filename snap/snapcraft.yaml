@@ -1,0 +1,27 @@
+name: paradrop-imserve
+version: 0.1
+summary: Virtual camera that serves images in a sequence.
+description: |
+  This snap acts as a virtual camera by serving images in sequence from an
+  image repository. An image repository is simply a collection of images
+  that can be downloaded as a tar file from a pre-determined location.
+  The snap does not install with any images at first, but they will be
+  fetched as needed.
+
+grade: stable
+confinement: strict
+
+apps:
+  paradrop-imserve:
+    command: paradrop-imserve
+    daemon: simple
+    restart-condition: always
+    plugs:
+      - network
+      - network-bind
+
+parts:
+  paradrop-imserve:
+    plugin: python
+    python-version: python3
+    source: .
